@@ -1,0 +1,8 @@
+{% block content %}
+<link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css">
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Register</button>
+    </form>
+{% endblock %}
